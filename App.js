@@ -7,6 +7,7 @@ import {
   TextInput,
   View,
   ScrollView,
+  Dimensions,
 } from 'react-native';
 import StoreCard from './src/components/StoreCard';
 
@@ -45,12 +46,14 @@ function App() {
 const styles = StyleSheet.create({
   row: {
     flex: 1,
+    alignItems: 'center',
     justifyContent: 'space-around',
     backgroundColor: '#D1D0E5',
   },
   container: {
     flex: 1,
     backgroundColor: '#eceff1',
+    marginVertical: 1,
   },
   headerText: {
     fontWeight: 'bold',
